@@ -1,0 +1,228 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PANEL DIALOGEX 0, 0, 245, 156
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_EDIT,"CustEdit",WS_TABSTOP,99,30,35,10
+    CONTROL         "",IDC_SPIN,"SpinnerControl",0x0,135,30,7,10
+    LTEXT           "Spinner Cust Control:",IDC_STATIC,90,18,67,8
+    EDITTEXT        IDC_EDIT_H,18,6,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_Y,18,30,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_X,18,18,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_Z,18,42,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "H",IDC_STATIC,6,6,8,8
+    LTEXT           "X",IDC_STATIC,6,18,8,8
+    LTEXT           "Y",IDC_STATIC,6,30,8,8
+    LTEXT           "Z",IDC_STATIC,6,42,8,8
+    PUSHBUTTON      "OK",IDOK,86,138,72,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,0,1
+ PRODUCTVERSION 0,0,0,1
+ FILEFLAGSMASK 0x37L
+#ifdef _DEBUG
+ FILEFLAGS 0x23L
+#else
+ FILEFLAGS 0x22L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Built for 3DSMax8(SP3) 3DXI(2.2) UT2004(3369)"
+            VALUE "CompanyName", "Roman Dzieciol"
+            VALUE "FileDescription", ".3D Vertex Animation Exporter"
+            VALUE "FileVersion", "0, 0, 0, 1"
+            VALUE "InternalName", "Unreal3D"
+            VALUE "LegalCopyright", "Copyright (C) 2007"
+            VALUE "OriginalFilename", "Unreal3D.dle"
+            VALUE "ProductName", "Unreal3D Exporter"
+            VALUE "ProductVersion", "0, 0, 0, 1"
+            VALUE "SpecialBuild", "Beta 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "Unreal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LIBDESCRIPTION      "Unreal 3D Vertex Animation Exporter"
+    IDS_CATEGORY            "Export"
+    IDS_CLASS_NAME          "Unreal3DExport"
+    IDS_PARAMS              "Parameters"
+    IDS_SPIN                "Spin"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_INFO_INIT           "Exporting.."
+    IDS_INFO_WRITE          "Writing .3d files..."
+    IDS_INFO_ENUM_OBJ       "Seeking %d/%d %s"
+    IDS_INFO_FRAMES         "Exporting %d frames (%d-%d)..."
+    IDS_INFO_MESH           "Meshes %d/%d %s"
+    IDS_INFO_ANIM           "Anims %d/%d"
+    IDS_INFO_SUMMARY        "Export succesfull! \n%d frames \n%d triangles \n%d verts per frame\n"
+    IDS_INFO_WMESH          "Writing mesh"
+    IDS_INFO_WANIM          "Writing anims"
+    IDS_INFO_OPT_SCAN       "Optimizing mesh precision [1/2]"
+    IDS_INFO_OPT_APPLY      "Optimizing mesh precision [2/2]"
+    IDS_INFO_DIDPRECISION   "\nMesh precision has been optimized! See %s_rc.uc for neccesary #exec commands.\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_IGAME           "Scene could not be enumerated!"
+    IDS_ERR_FRAMERANGE      "Invalid frame range: %d-%d"""
+    IDS_ERR_FMODEL          "Could not open for writing:  %s"
+    IDS_ERR_FANIM           "Could not open for writing:  %s"
+    IDS_ERR_NOTRI           "Missing triangle #%d in [%s]"
+    IDS_ERR_NOVERTS         "Frame #%d has different number of vertices (%d instead of %d)"
+    IDS_ERR_FSCRIPT         "Could not open for writing:  %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CANCEL_Q            "Really Cancel?"
+    IDS_CANCEL_C            "Really Cancel?"
+    IDS_CANCEL_ERR          "Cancelled!"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
