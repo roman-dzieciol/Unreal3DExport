@@ -62,8 +62,8 @@ Both require a Note Track attached to the World node:
  * Each command should be in it's own line
   
 Animation Sequence command:
-1. At the beginning of each animation, put one Note in the Note Track
-1. In each note add following line: 
+ 1. At the beginning of each animation, put one Note in the Note Track
+ 1. In each note add following line: 
  * "a AnimName EndFrame FrameRate GroupName", where: 
   * "a" is a special marker, dont change it
   * "AnimName" is your animation name 
